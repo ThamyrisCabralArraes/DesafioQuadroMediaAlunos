@@ -6,31 +6,66 @@ bode {
 #topo {
   width: auto;
   height: 200px;
-  margin: 100px auto;
+  margin: auto;
+  margin-top: 20px;
   background-color: rgb(238, 81, 81);
   box-shadow: 40px -16px teal;
 }
 .h1topo {
-  width: 1000px;
   font-size: 60px;
-  font-weight: 900;
   color: #fff;
-  padding: 50px 70px;
+  text-align: center;
   margin: auto;
+  padding: 50px 70px;
   text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #cabecalho {
-  border: 1px solid royalblue;
-  height: 300px;
+  margin-left: 182px;
+}
+.pcabecalho {
   font-size: 60px;
   color:rgb(238, 81, 81);
-  
+  font-weight: bold;
 }
 
 #conteudo {
+  border-top: solid 10px rgb(238, 81, 81);
+  width: 1500px;
+  height: 900px;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#tabela {
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.subtabela {
+  background-color: rgb(238, 235, 235);
+}
+div#conteudo tr th {
+  width: 1500px;
+  padding: 20px;
+}
+div#conteudo tr td {
+  width: 1500px;
+  padding: 20px;
+}
+
+
+footer {
+  background-color: cadetblue;
+  width: 1500px;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-footer {
-  
+.footer {
+  text-align: center;
+  color: #fff;
 }
