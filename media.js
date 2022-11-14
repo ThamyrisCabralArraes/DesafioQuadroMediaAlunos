@@ -10,7 +10,8 @@
   ];
 
     alunos.forEach(aluno => {
-      aluno.media = divisao(aluno.notas[0], aluno.notas[1], aluno.notas[2], aluno.notas[3],)
+      aluno.media = divisao(...aluno.notas)
+      //aluno.media = divisao(aluno.notas[0], aluno.notas[1], aluno.notas[2], aluno.notas[3],)
     })
 
       const html = alunos.map(aluno => 
