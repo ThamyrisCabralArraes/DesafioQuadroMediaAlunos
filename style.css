@@ -72,3 +72,11 @@ footer {
   color: #fff;
   font-weight: bold;
 }
+
+.reproved {
+  color: red
+}
+
+.aproved {
+  color: green
+}
