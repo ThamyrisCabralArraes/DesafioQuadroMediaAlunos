@@ -11,7 +11,7 @@
 
     alunos.forEach(aluno => {
       aluno.media = divisao(...aluno.notas)
-      //aluno.media = divisao(aluno.notas[0], aluno.notas[1], aluno.notas[2], aluno.notas[3],)
+      //aluno.media = divisao(aluno.notas[0], aluno.notas[1], aluno.notas[2], aluno.notas[3],) -> a parte de cima é um resumo disso
     })
 
       const html = alunos.map(aluno => 
@@ -24,6 +24,14 @@
       <td>${aluno.media}</td> 
     </tr>
       `).join('')
+
+        // Simplificar o de cima
+        //  const html = alunos.map(aluno => 
+      //   `<tr>
+      //   <td>${aluno.nome}</td>
+      //   ${aluno.nome.map(n => ${`<td>${n}</td>).join()} 
+      // </tr>
+      //   `).join('')
 
       document.querySelector('tbody').innerHTML = html
     })()
