@@ -25,17 +25,17 @@
     </tr>
       `).join('')
 
-        // Simplificar o de cima
+      document.querySelector('tbody').innerHTML = levarParaHtml
+    })()
+
+      // Simplificar o de cima
         //  const levarParaHtml = alunos.map(aluno => 
       //   `<tr>
       //   <td>${aluno.nome}</td>
       //   ${aluno.nome.map(n => ${`<td>${n}</td>).join('')} 
       // </tr>
       //   `).join('')
-
-      document.querySelector('tbody').innerHTML = levarParaHtml
-    })()
-
+      
 function soma() {
   let numeros = [...arguments]
     return numeros.reduce(function(acumulador, numeroAtual){
