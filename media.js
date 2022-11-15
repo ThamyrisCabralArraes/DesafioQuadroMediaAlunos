@@ -14,7 +14,7 @@
       //aluno.media = divisao(aluno.notas[0], aluno.notas[1], aluno.notas[2], aluno.notas[3],) -> a parte de cima é um resumo disso
     })
 
-      const html = alunos.map(aluno => 
+      const levarParaHtml = alunos.map(aluno => 
         `<tr class="${aluno.media < 7 ? 'reproved' : 'aproved'}" >
       <td>${aluno.nome}</td>
       <td>${aluno.notas[0]}</td> 
@@ -26,14 +26,14 @@
       `).join('')
 
         // Simplificar o de cima
-        //  const html = alunos.map(aluno => 
+        //  const levarParaHtml = alunos.map(aluno => 
       //   `<tr>
       //   <td>${aluno.nome}</td>
       //   ${aluno.nome.map(n => ${`<td>${n}</td>).join('')} 
       // </tr>
       //   `).join('')
 
-      document.querySelector('tbody').innerHTML = html
+      document.querySelector('tbody').innerHTML = levarParaHtml
     })()
 
 function soma() {
